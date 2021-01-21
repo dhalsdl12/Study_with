@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	char word[50];
+	cout << "문자열 입력 >> ";
+	cin.getline(word, 50);
+
+	for (int i = 0; i < strlen(word); i++)
+	{
+		for (int j = 0; j <= i; j++)
+		{
+			cout << word[j];
+		}
+		cout << endl;
+	}
+	return 0;
+}
